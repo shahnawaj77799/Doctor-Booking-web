@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Doctor Booking System</h1><br><br><br>
+    <form id="bookingForm">
+        <label for="ID">id:</label>
+        <input type="text" id="id" name="id" >
+        
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" name="patientName" required>
+        
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+        
+        
+        <!-- <label for="doctorType">Doctor Type:</label><br>
+        <input type="text" id="doctorType" name="doctorType" required> -->
+        <label for="doctorType">Select Doctor Type:</label><br><br>
+        <select id="doctorType" name="doctorType" required><br>
+            <option value="general">General Physician</option>
+            <option value="dentist">Dentist</option>
+            <option value="cardiologist">Cardiologist</option>
+            <option value="dermatologist">Dermatologist</option>
+        </select><br><br>
+        
+        <!-- <label for="healthDiseases">Health Diseases:</label><br>
+        <input type="text" id="healthDiseases" name="healthDiseases" required><br> -->
+        
+        <label for="disease">healthDiseases:</label><br><br>
+        <select id="healthDiseases" name="healthDiseases" required><br><br>
+            <option value="flu">Flu</option>
+            <option value="cavity">Cavity</option>
+            <option value="heartDisease">Heart Disease</option>
+            <option value="skinRash">Skin Rash</option>
+        </select><br><br>
+
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date" required><br>
+        
+        <label for="time">Time:</label><br>
+        <input type="time" id="time" name="time" required><br>
+        
+        <button type="submit">Add Booking</button>
+    </form>
+
+
+
+   
+    <table id="bookingTable">
+        <thead>
+           
+            <tr>
+                <h1>Table</h1>
+                <th>ID</th><br><br><br>
+                <th>Patient Name</th>
+                <th>Location</th>
+                <th>Doctor Type</th>
+                <th>Health Diseases</th>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Booking rows will be inserted here dynamically -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

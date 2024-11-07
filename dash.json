@@ -1,0 +1,20 @@
+[ 
+{
+    id: 1,
+    patientName: "John Doe",
+    location: "New York",
+    doctorType: "Cardiologist",
+    healthDiseases: "Heart Disease",
+    date: "2023-07-20",
+    time: "10:00 AM"
+},
+{
+    id: 2,
+    patientName: "Jane Smith",
+    location: "Los Angeles",
+    doctorType: "Dermatologist",
+    healthDiseases: "Skin Allergy",
+    date: "2023-07-21",
+    time: "11:00 AM"
+}
+];
